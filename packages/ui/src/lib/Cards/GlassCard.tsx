@@ -5,11 +5,9 @@ const StyledGlassCard = styled.div`
   background-image: url('https://images.vexels.com/media/users/3/166921/raw/c6f81468e5c97ca8ac0a326cb6e2c55d-fondo-de-puntos-de-color-abstracto.jpg');
   background-size: cover;
   padding: 1rem;
-
   display: flex;
   justify-content: center;
   align-items: center;
- 
 
   .card {
     border-radius: 1rem;
@@ -35,11 +33,11 @@ type GlassCardProps = {
 };
 
 export const GlassCard = ({ title, subTitle }: GlassCardProps) => (
-  <StyledGlassCard>   
-      <div className="card"></div>
-      <div className="contenido">
-        <Subtitle>{title}</Subtitle>
-        <Magic>{subTitle}</Magic>
-      </div>    
+  <StyledGlassCard>
+    <div className="card"></div>
+    <div className="contenido">
+      <Subtitle>{title}</Subtitle>
+      <Magic>{subTitle}</Magic>
+    </div>
   </StyledGlassCard>
 );
